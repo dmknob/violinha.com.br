@@ -10,7 +10,10 @@ const fs = require('fs')
 const app = express()
 const PORT = process.env.PORT || 3008
 const isProd = process.env.NODE_ENV === 'production'
-const BASE_URL = process.env.BASE_URL
+
+// Garante que o BASE_URL nunca seja undefined.
+// Se não especificado no .env, assume violinha.com.br (prod) ou localhost (dev).
+const BASE_URL = process.env.BASE_URL || (isProd ? 'https://violinha.com.br' : `http://localhost:${PORT}`)
 
 // ─── View Engine ─────────────────────────────────────────────────────────────
 app.use(expressLayouts)
