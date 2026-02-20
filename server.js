@@ -10,7 +10,7 @@ const fs = require('fs')
 const app = express()
 const PORT = process.env.PORT || 3008
 const isProd = process.env.NODE_ENV === 'production'
-const BASE_URL = process.env.BASE_URL || (isProd ? 'https://violinha.com.br' : `http://localhost:${PORT}`)
+const BASE_URL = process.env.BASE_URL
 
 // ─── View Engine ─────────────────────────────────────────────────────────────
 app.use(expressLayouts)
@@ -64,5 +64,5 @@ app.use((req, res) => {
 
 // ─── Start ───────────────────────────────────────────────────────────────────
 app.listen(PORT, () => {
-    console.log(`🐟 Violinha rodando em ${BASE_URL} [${process.env.NODE_ENV}]`)
+    console.log(`🐟 Violinha rodando em http://127.0.0.1:3008`)
 })
