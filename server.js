@@ -50,6 +50,7 @@ const sitemapRouter = require('./src/routes/sitemap')
 
 app.use((req, res, next) => {
     res.locals.BASE_URL = BASE_URL
+    res.locals.current_path = req.path === '/' ? '' : req.path
     res.locals.getData = getData
     res.locals.formatters = formatters
     res.locals.setCacheHeaders = () => setCacheHeaders(res)

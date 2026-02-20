@@ -30,6 +30,7 @@ router.get('/:slug', (req, res) => {
         titulo: `${produto.nome} • violinha.com.br — Novo Hamburgo`,
         produto,
         BASE_URL: res.locals.BASE_URL,
+        canonical_url: `${res.locals.BASE_URL}/peixe/${produto.slug}`
     })
 })
 
