@@ -9,8 +9,8 @@ const fs = require('fs')
 
 const app = express()
 const PORT = process.env.PORT || 3008
-const BASE_URL = process.env.BASE_URL || `http://localhost:${PORT}`
 const isProd = process.env.NODE_ENV === 'production'
+const BASE_URL = process.env.BASE_URL || (isProd ? 'https://violinha.com.br' : `http://localhost:${PORT}`)
 
 // ─── View Engine ─────────────────────────────────────────────────────────────
 app.use(expressLayouts)
