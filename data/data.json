@@ -1,0 +1,210 @@
+{
+    "config": {
+        "whatsapp": "5551991646694",
+        "whatsapp_mensagem_padrao": "Olá! Gostaria de consultar a disponibilidade de {produto}.",
+        "whatsapp_mensagem_atendimento": "Olá! Gostaria de confirmar se há alguém disponível para atendimento."
+    },
+    "produtos": [
+        {
+            "slug": "violinha-pura",
+            "nome": "Violinha Pura",
+            "categoria": "couro",
+            "ativo": true,
+            "em_estoque": true,
+            "empanado": false,
+            "contem_gluten": false,
+            "alergenos": [],
+            "pesos_disponiveis": [
+                "1kg"
+            ],
+            "peso_padrao": "1kg",
+            "preco_por_peso": {
+                "1kg": 50.00
+            },
+            "imagem": "/img/violinha_1kg_pura_900x1600.webp",
+            "descricao_seo": "Violinha (Anjo) pura, sem empanamento. Peixe de couro direto do congelador.",
+            "descricao_longa": "A Violinha pura para você preparar da sua maneira. Peixe de água doce, de couro, com sabor suave e carne firme. Ideal para ensopados ou frituras. Naturalmente sem glúten.",
+            "instrucoes": "Descongelar na geladeira antes do preparo. Preparar conforme sua receita preferida."
+        },
+        {
+            "slug": "violinha-empanada",
+            "nome": "Violinha Empanada",
+            "categoria": "couro",
+            "ativo": true,
+            "em_estoque": true,
+            "empanado": true,
+            "contem_gluten": false,
+            "alergenos": [],
+            "pesos_disponiveis": [
+                "500g",
+                "1kg"
+            ],
+            "peso_padrao": "1kg",
+            "preco_por_peso": {
+                "500g": 25.00,
+                "1kg": 50.00
+            },
+            "imagem": "/img/violinha_500_congelada_1600x900.webp",
+            "descricao_seo": "A verdadeira violinha, temperada e empanada em farinha de milho. É só fritar.",
+            "descricao_longa": "A Violinha é um peixe de água doce característico da região, de sabor suave e textura firme após a fritura. Temperada e empanada artesanalmente em farinha de milho — naturalmente sem glúten. Vai direto do congelador para o óleo quente.",
+            "instrucoes": "Fritar ainda congelado em óleo a 180°C por aproximadamente 3–4 minutos, ou até dourar."
+        },
+        {
+            "slug": "file-de-traira-puro",
+            "nome": "Filé de Traíra Puro",
+            "categoria": "escama",
+            "ativo": true,
+            "em_estoque": true,
+            "empanado": false,
+            "contem_gluten": false,
+            "alergenos": [],
+            "pesos_disponiveis": [
+                "Por Quilo"
+            ],
+            "peso_padrao": "Por Quilo",
+            "preco_por_peso": {
+                "Por Quilo (Pesar na hora)": 45.00
+            },
+            "imagem": "/img/file-traira-puro.webp",
+            "descricao_seo": "Filé de traíra puro em pedaços grandes. Peixe de escama, sem empanamento.",
+            "descricao_longa": "O Filé de Traíra puro, retalhado para remover as espinhas, em pedaços grandes. Sendo um peixe de escama, é tradição em diversas famílias. Necessita ser pesado na hora.",
+            "instrucoes": "Descongelar na geladeira. Perfeito para moquecas, assados ou para você mesmo empanar."
+        },
+        {
+            "slug": "file-de-traira-empanado",
+            "nome": "Filé de Traíra Empanado",
+            "categoria": "escama",
+            "ativo": true,
+            "em_estoque": true,
+            "empanado": true,
+            "contem_gluten": false,
+            "alergenos": [],
+            "pesos_disponiveis": [
+                "500g",
+                "1kg"
+            ],
+            "peso_padrao": "1kg",
+            "preco_por_peso": {
+                "500g": 22.50,
+                "1kg": 45.00
+            },
+            "imagem": "/img/file-traira-empanado.webp",
+            "descricao_seo": "Filé de traíra retalhado manualmente para remover espinhas, empanado em farinha de milho. Sem glúten.",
+            "descricao_longa": "A Traíra é um peixe de escama, permitido nas tradições que exigem peixe de escama na Sexta-Feira Santa. O filé é retalhado manualmente para eliminar espinhas, garantindo praticidade na hora de servir. Empanado em farinha de milho — naturalmente sem glúten.",
+            "instrucoes": "Fritar ainda congelado em óleo a 180°C por aproximadamente 3–4 minutos, ou até dourar."
+        },
+        {
+            "slug": "file-de-rosado-puro",
+            "nome": "Filé de Rosado Puro",
+            "categoria": "couro",
+            "ativo": true,
+            "em_estoque": true,
+            "empanado": false,
+            "contem_gluten": false,
+            "alergenos": [],
+            "pesos_disponiveis": [
+                "Por Quilo"
+            ],
+            "peso_padrao": "Por Quilo",
+            "preco_por_peso": {
+                "Por Quilo (Pesar na hora)": 45.00
+            },
+            "imagem": "/img/file-rosado-puro.webp",
+            "descricao_seo": "Filé de rosado puro (bagre) em pedaços grandes. Peixe de couro sem empanamento.",
+            "descricao_longa": "Também conhecido como bagre, o Rosado é um peixe de couro de sabor encorpado. Vendido puro, em pedaços grandes, e pesado na hora.",
+            "instrucoes": "Descongelar antes do preparo. Ótimo para ensopados com molho grosso."
+        },
+        {
+            "slug": "file-de-rosado-empanado",
+            "nome": "Filé de Rosado Empanado",
+            "categoria": "couro",
+            "ativo": true,
+            "em_estoque": true,
+            "empanado": true,
+            "contem_gluten": false,
+            "alergenos": [],
+            "pesos_disponiveis": [
+                "500g",
+                "1kg"
+            ],
+            "peso_padrao": "1kg",
+            "preco_por_peso": {
+                "500g": 22.50,
+                "1kg": 45.00
+            },
+            "imagem": "/img/rosado-empanado.webp",
+            "descricao_seo": "Rosado (Bagre) empanado em farinha de milho. Peixe de couro, sem glúten, pronto para fritar.",
+            "descricao_longa": "O Rosado, também conhecido como Bagre, é um peixe de couro de sabor encorpado e textura firme. Empanado artesanalmente em farinha de milho — naturalmente sem glúten. Vai direto do congelador ao óleo.",
+            "instrucoes": "Fritar ainda congelado em óleo a 180°C por aproximadamente 3–4 minutos, ou até dourar."
+        },
+        {
+            "slug": "file-de-anjo-puro",
+            "nome": "Filé de Anjo Puro",
+            "categoria": "couro",
+            "ativo": true,
+            "em_estoque": true,
+            "empanado": false,
+            "contem_gluten": false,
+            "alergenos": [],
+            "pesos_disponiveis": [
+                "Por Quilo"
+            ],
+            "peso_padrao": "Por Quilo",
+            "preco_por_peso": {
+                "Por Quilo (Pesar na hora)": 45.00
+            },
+            "imagem": "/img/file-anjo-puro.webp",
+            "descricao_seo": "Filé de anjo puro em pedaços grandes. Peixe de couro marinho sem empanamento.",
+            "descricao_longa": "O cação-anjo é um peixe de couro extremamente macio e sem espinhas. Vendido puro, em pedaços grandes para serem pesados na hora.",
+            "instrucoes": "Descongelar na geladeira antes de preparar. Ideal para assados rápidos ou grelha."
+        },
+        {
+            "slug": "file-de-anjo-empanado",
+            "nome": "Filé de Anjo Empanado",
+            "categoria": "couro",
+            "ativo": true,
+            "em_estoque": true,
+            "empanado": true,
+            "contem_gluten": false,
+            "alergenos": [],
+            "pesos_disponiveis": [
+                "500g",
+                "1kg"
+            ],
+            "peso_padrao": "1kg",
+            "preco_por_peso": {
+                "500g": 22.50,
+                "1kg": 45.00
+            },
+            "imagem": "/img/file-anjo-empanado.webp",
+            "descricao_seo": "Filé de anjo empanado em farinha de milho. Sem espinhas, sem glúten, ideal para crianças.",
+            "descricao_longa": "O filé de Anjo (cação) é famoso por sua maciez e total ausência de espinhas, sendo o queridinho das crianças. Empanado na farinha de milho e pronto para o óleo.",
+            "instrucoes": "Fritar ainda congelado em óleo a 180°C por aproximadamente 3–4 minutos, ou até dourar."
+        },
+        {
+            "slug": "camarao-a-milanesa",
+            "nome": "Camarão à Milanesa",
+            "categoria": "camarao",
+            "ativo": true,
+            "em_estoque": false,
+            "empanado": true,
+            "contem_gluten": true,
+            "alergenos": [
+                "glúten",
+                "ovos",
+                "crustáceos"
+            ],
+            "pesos_disponiveis": [
+                "500g"
+            ],
+            "peso_padrao": "500g",
+            "preco_por_peso": {
+                "500g": 50.00
+            },
+            "imagem": "/img/camarao-milanesa.webp",
+            "descricao_seo": "Camarão à milanesa congelado. Produto artesanal, contém glúten.",
+            "descricao_longa": "Camarão fresco cuidadosamente limpo e empanado à milanesa tradicional (com farinha de trigo e ovos). Muito crocante e saboroso, perfeito como aperitivo especial.",
+            "instrucoes": "Fritar ainda congelado em óleo quente a 180°C até atingir tom bastante dourado."
+        }
+    ]
+}

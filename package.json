@@ -1,0 +1,28 @@
+{
+  "name": "violinha.com.br",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "dev": "node server.js",
+    "dev:full": "npm run build:css && npm run dev",
+    "start": "node server.js",
+    "build:css": "npx tailwindcss -i ./src/input.css -o ./public/css/style.css --minify",
+    "watch:css": "npx tailwindcss -i ./src/input.css -o ./public/css/style.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "dotenv": "^17.3.1",
+    "ejs": "^3.0.2",
+    "express": "^5.2.1",
+    "express-ejs-layouts": "^2.5.1"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.19"
+  }
+}

@@ -1,0 +1,76 @@
+<header class="bg-marinho text-white shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+
+            <!-- Logo -->
+            <a href="/"
+                class="flex items-center gap-2 group min-h-[44px] focus:outline-none focus:ring-2 focus:ring-ambar rounded-md px-1">
+                <span class="text-2xl group-hover:scale-110 transition-transform">🐟</span>
+                <span
+                    class="font-titulo font-bold text-lg sm:text-lg tracking-tight group-hover:text-amber-100 transition-colors">violinha.com.br</span>
+            </a>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex items-center gap-6" aria-label="Navegação principal">
+                <a href="/#produtos"
+                    class="text-sm font-medium hover:text-ambar transition-colors min-h-[44px] flex items-center">Catálogo</a>
+                <a href="/como-preparar"
+                    class="text-sm font-medium hover:text-ambar transition-colors min-h-[44px] flex items-center">Como
+                    Preparar</a>
+                <a href="/tradicoes"
+                    class="text-sm font-medium hover:text-ambar transition-colors min-h-[44px] flex items-center">Tradições</a>
+                <a href="/contato"
+                    class="text-sm font-medium hover:text-ambar transition-colors min-h-[44px] flex items-center">Onde
+                    Estamos</a>
+            </nav>
+
+            <!-- Mobile Button -->
+            <div class="md:hidden flex items-center">
+                <button id="mobile-menu-btn" type="button"
+                    class="text-white hover:text-ambar focus:outline-none focus:ring-2 focus:ring-inset focus:ring-ambar rounded-md p-2 min-h-[44px]"
+                    aria-expanded="false" aria-controls="mobile-menu" aria-label="Abrir menu de navegação">
+                    <!-- Icon: Hamburger -->
+                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Mobile Menu (Drop-down) -->
+    <div id="mobile-menu" class="hidden md:hidden bg-marinho border-t border-slate-700 shadow-inner">
+        <nav class="px-4 pt-2 pb-4 space-y-1 sm:px-6" aria-label="Navegação mobile">
+            <a href="/#produtos"
+                class="block px-3 py-3 rounded-md text-base font-medium text-white hover:bg-slate-800 hover:text-ambar border-b border-slate-700 last:border-0 min-h-[44px]">Catálogo
+                (<span class="text-ambar font-bold">Ver Peixes</span>)</a>
+            <a href="/como-preparar"
+                class="block px-3 py-3 rounded-md text-base font-medium text-white hover:bg-slate-800 hover:text-ambar border-b border-slate-700 last:border-0 min-h-[44px]">Como
+                Preparar</a>
+            <a href="/tradicoes"
+                class="block px-3 py-3 rounded-md text-base font-medium text-white hover:bg-slate-800 hover:text-ambar border-b border-slate-700 last:border-0 min-h-[44px]">Tradições</a>
+            <a href="/contato"
+                class="block px-3 py-3 rounded-md text-base font-medium text-white hover:bg-slate-800 hover:text-ambar border-b border-slate-700 last:border-0 min-h-[44px]">Onde
+                Estamos</a>
+        </nav>
+    </div>
+
+    <!-- Script Inline para o Toggle do Menu -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var btn = document.getElementById('mobile-menu-btn');
+            var menu = document.getElementById('mobile-menu');
+
+            if (btn && menu) {
+                btn.addEventListener('click', function () {
+                    var expanded = this.getAttribute('aria-expanded') === 'true';
+                    this.setAttribute('aria-expanded', !expanded);
+                    menu.classList.toggle('hidden');
+                });
+            }
+        });
+    </script>
+</header>
