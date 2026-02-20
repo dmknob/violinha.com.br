@@ -1,44 +1,62 @@
-<% /* Scripts extras para o head injetado pelo layout */ const schemaJSON={ "@context" : "https://schema.org" , "@type"
-    : "FoodEstablishment" , "name" : "violinha.com.br" , "address" : { "@type" : "PostalAddress" , "streetAddress"
-    : "Rua General Vargas, 31" , "addressLocality" : "Novo Hamburgo" , "addressRegion" : "RS" , "postalCode"
-    : "93534-530" , "addressCountry" : "BR" }, "geo" : { "@type" : "GeoCoordinates" , "latitude" :
-    -29.674602, "longitude" : -51.102520 }, "telephone" : "+5551991646694" , "url" : BASE_URL, "servesCuisine"
-    : "Frutos do mar empanados" }; %>
+<%- contentFor('meta') %>
+    <meta name="description"
+        content="A verdadeira violinha empanada, peixes frescos, diretos do congelador para o óleo. Tradição em Novo Hamburgo.">
+    <meta property="og:site_name" content="violinha.com.br">
+    <meta property="og:title" content="violinha.com.br • Peixe para Páscoa em Novo Hamburgo">
+    <meta property="og:description"
+        content="A verdadeira violinha empanada, peixes frescos, diretos do congelador para o óleo. Encomende para a Páscoa na retirada balcão.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="<%= BASE_URL %>/">
+    <meta property="og:image" content="<%= BASE_URL %>/img/logo-violinha.png">
+    <meta property="og:image:alt" content="Logo do violinha.com.br">
+    <meta property="og:locale" content="pt_BR">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="violinha.com.br • Peixe em Novo Hamburgo">
+    <meta name="twitter:description" content="A verdadeira violinha empanada, diretos do congelador para o óleo.">
+    <meta name="twitter:image" content="<%= BASE_URL %>/img/logo-violinha.png">
 
-    <script type="application/ld+json">
+    <% /* Scripts extras para o head injetado pelo layout */ const schemaJSON={ "@context" : "https://schema.org"
+        , "@type" : "FoodEstablishment" , "name" : "violinha.com.br" , "address" : { "@type" : "PostalAddress"
+        , "streetAddress" : "Rua General Vargas, 31" , "addressLocality" : "Novo Hamburgo" , "addressRegion" : "RS"
+        , "postalCode" : "93534-530" , "addressCountry" : "BR" }, "geo" : { "@type" : "GeoCoordinates" , "latitude" :
+        -29.674602, "longitude" : -51.102520 }, "telephone" : "+5551991646694" , "url" : BASE_URL, "servesCuisine"
+        : "Frutos do mar empanados" }; %>
+
+        <script type="application/ld+json">
   <%- JSON.stringify(schemaJSON) %>
 </script>
 
-    <div class="w-full flex-grow flex flex-col pt-8 pb-16">
+        <div class="w-full flex-grow flex flex-col pt-8 pb-16">
 
-        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full text-center md:text-left mb-12">
-            <h1 class="font-titulo text-3xl md:text-5xl font-extrabold text-marinho mb-4 leading-tight">
-                Peixe Fresco <br class="md:hidden">Pronto Para Fritar
-            </h1>
-            <p class="text-lg text-slate-600 max-w-2xl mx-auto md:mx-0">
-                Do congelador direto para o óleo quente. Praticidade e tradição para a sua Páscoa com peixes empanados
-                artesanalmente em farinha de milho.
-            </p>
-        </section>
+            <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full text-center md:text-left mb-12">
+                <h1 class="font-titulo text-3xl md:text-5xl font-extrabold text-marinho mb-4 leading-tight">
+                    Peixe Fresco <br class="md:hidden">Pronto Para Fritar
+                </h1>
+                <p class="text-lg text-slate-600 max-w-2xl mx-auto md:mx-0">
+                    Do congelador direto para o óleo quente. Praticidade e tradição para a sua Páscoa com peixes
+                    empanados
+                    artesanalmente em farinha de milho.
+                </p>
+            </section>
 
-        <section id="produtos" class="w-full bg-slate-100/50 py-12 flex-grow">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 class="font-titulo text-2xl font-bold text-marinho mb-8 text-center md:text-left">Nosso Catálogo
-                </h2>
+            <section id="produtos" class="w-full bg-slate-100/50 py-12 flex-grow">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <h2 class="font-titulo text-2xl font-bold text-marinho mb-8 text-center md:text-left">Nosso Catálogo
+                    </h2>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-                    <% if (produtos && produtos.length> 0) { %>
-                        <% produtos.forEach(function(produto) { %>
-                            <%- include('../partials/card-produto', { produto: produto, BASE_URL: BASE_URL, formatters:
-                                formatters }) %>
-                                <% }); %>
-                                    <% } else { %>
-                                        <div class="col-span-full py-12 text-center text-slate-500">
-                                            <p>Os produtos disponíveis aparecerão aqui em breve.</p>
-                                        </div>
-                                        <% } %>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+                        <% if (produtos && produtos.length> 0) { %>
+                            <% produtos.forEach(function(produto) { %>
+                                <%- include('../partials/card-produto', { produto: produto, BASE_URL: BASE_URL,
+                                    formatters: formatters }) %>
+                                    <% }); %>
+                                        <% } else { %>
+                                            <div class="col-span-full py-12 text-center text-slate-500">
+                                                <p>Os produtos disponíveis aparecerão aqui em breve.</p>
+                                            </div>
+                                            <% } %>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-    </div>
+        </div>
