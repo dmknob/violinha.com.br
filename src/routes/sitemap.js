@@ -5,7 +5,7 @@ const router = express.Router()
 
 // GET /sitemap.xml
 router.get('/sitemap.xml', (req, res) => {
-    const BASE_URL = res.locals.BASE_URL
+    const BASE_URL = 'https://violinha.com.br'
     const { produtos } = res.locals.getData()
 
     const rotas_estaticas = [
@@ -25,6 +25,7 @@ router.get('/sitemap.xml', (req, res) => {
         }))
 
     const todas = [...rotas_estaticas, ...rotas_produtos]
+    console.log(todas);
 
     const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
