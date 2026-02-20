@@ -37,7 +37,7 @@ ${todas.map(r => `  <url>
 </urlset>`
 
     res.set('Content-Type', 'application/xml')
-    res.set('Cache-Control', 'public, max-age=86400')
+    //res.set('Cache-Control', 'public, max-age=86400')
     res.send(xml)
 })
 
