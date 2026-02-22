@@ -108,7 +108,8 @@
 
                                     <% if (produto.em_estoque) { %>
                                         <a href="<%= waUrl %>" target="_blank" rel="noopener noreferrer"
-                                            class="w-full sm:w-auto bg-esmeralda hover:bg-emerald-700 text-white text-center font-bold text-lg py-4 px-8 rounded-xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-0.5 min-h-[56px] flex items-center justify-center gap-2">
+                                            class="w-full sm:w-auto bg-esmeralda hover:bg-emerald-700 text-white text-center font-bold text-lg py-4 px-8 rounded-xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-0.5 min-h-[56px] flex items-center justify-center gap-2"
+                                            onclick="gtag('event', 'whatsapp_click', { 'event_category': 'CTA', 'event_label': 'produto', 'produto': '<%= produto.nome %>' })">
                                             <span>Consultar Disponibilidade no WhatsApp</span>
                                         </a>
                                         <% } else { %>

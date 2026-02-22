@@ -47,7 +47,8 @@
                         <div>
                             <a href="https://wa.me/<%= getData().config.whatsapp %>?text=<%= encodeURIComponent(getData().config.whatsapp_mensagem_atendimento) %>"
                                 target="_blank" rel="noopener noreferrer"
-                                class="w-full inline-block bg-esmeralda hover:bg-emerald-700 text-white font-bold py-4 px-6 rounded-xl text-center transition-colors min-h-[44px]">
+                                class="w-full inline-block bg-esmeralda hover:bg-emerald-700 text-white font-bold py-4 px-6 rounded-xl text-center transition-colors min-h-[44px]"
+                                onclick="gtag('event', 'whatsapp_click', { 'event_category': 'CTA', 'event_label': 'contato' })">
                                 Chamar no WhatsApp
                             </a>
                         </div>
