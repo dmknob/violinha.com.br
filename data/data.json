@@ -7,7 +7,7 @@
     "produtos": [
         {
             "slug": "violinha-pura",
-            "nome": "Violinha Pura",
+            "nome": "Peixe Violinha Puro",
             "categoria": "couro",
             "ativo": true,
             "em_estoque": true,
@@ -22,13 +22,13 @@
                 "1kg": 50.00
             },
             "imagem": "/img/violinha_1kg_pura_900x1600.webp",
-            "descricao_seo": "Violinha (Anjo) pura, sem empanamento. Peixe de couro direto do congelador.",
-            "descricao_longa": "A Violinha pura para você preparar da sua maneira. Peixe de água doce, de couro, com sabor suave e carne firme. Ideal para ensopados ou frituras. Naturalmente sem glúten.",
+            "descricao_seo": "Peixe violinha puro, sem empanamento. Peixe de couro de água doce, direto da peixaria para o seu congelador.",
+            "descricao_longa": "O peixe violinha puro para você preparar da sua maneira. Peixe de água doce, de couro, com sabor suave e carne firme. Ideal para preparar sua própria porção de violinha frita ou em ensopados. Retire direto na nossa peixaria de congelados. Naturalmente sem glúten.",
             "instrucoes": "Descongelar na geladeira antes do preparo. Preparar conforme sua receita preferida."
         },
         {
             "slug": "violinha-empanada",
-            "nome": "Violinha Empanada",
+            "nome": "Peixe Violinha Empanada",
             "categoria": "couro",
             "ativo": true,
             "em_estoque": true,
@@ -45,13 +45,13 @@
                 "1kg": 50.00
             },
             "imagem": "/img/violinha_500_congelada_1600x900.webp",
-            "descricao_seo": "A verdadeira violinha, temperada e empanada em farinha de milho. É só fritar.",
-            "descricao_longa": "A Violinha é um peixe de água doce característico da região, de sabor suave e textura firme após a fritura. Temperada e empanada artesanalmente em farinha de milho — naturalmente sem glúten. Vai direto do congelador para o óleo quente.",
+            "descricao_seo": "Peixe violinha empanado em farinha de milho. Ideal para preparar sua porção de violinha frita em casa. Prático e sem glúten.",
+            "descricao_longa": "O peixe violinha é um peixe de água doce característico da nossa região, de sabor suave e textura firme. Perfeito para quem ama uma boa porção de violinha frita! Temperada e empanada artesanalmente em farinha de milho — naturalmente sem glúten. Compre direto da nossa peixaria de produtos congelados: vai direto do freezer para o óleo quente.",
             "instrucoes": "Fritar ainda congelado em óleo a 180°C por aproximadamente 3–4 minutos, ou até dourar."
         },
         {
             "slug": "file-de-traira-puro",
-            "nome": "Filé de Traíra Puro",
+            "nome": "Filé de Peixe Traíra Puro",
             "categoria": "escama",
             "ativo": true,
             "em_estoque": true,
@@ -66,13 +66,13 @@
                 "Por Quilo (Pesar na hora)": 45.00
             },
             "imagem": "/img/file-traira-puro.webp",
-            "descricao_seo": "Filé de traíra puro em pedaços grandes. Peixe de escama, sem empanamento.",
-            "descricao_longa": "O Filé de Traíra puro, retalhado para remover as espinhas, em pedaços grandes. Sendo um peixe de escama, é tradição em diversas famílias. Necessita ser pesado na hora.",
+            "descricao_seo": "Filé de peixe traíra puro em pedaços grandes, sem espinhas. Peixe de escama, sem empanamento. Garanta o seu na nossa peixaria.",
+            "descricao_longa": "O Filé de Peixe Traíra puro é tradição em diversas famílias na Sexta-Feira Santa. Retalhado artesanalmente para remover as espinhas, vem em pedaços grandes. Retire direto na nossa peixaria especializada em congelados. Sendo um peixe de escama, é ideal para moquecas, assados ou para você mesmo fazer o seu peixe frito. Necessita ser pesado na hora.",
             "instrucoes": "Descongelar na geladeira. Perfeito para moquecas, assados ou para você mesmo empanar."
         },
         {
             "slug": "file-de-traira-empanado",
-            "nome": "Filé de Traíra Empanado",
+            "nome": "Filé de Peixe Traíra Empanado",
             "categoria": "escama",
             "ativo": true,
             "em_estoque": true,
@@ -89,13 +89,13 @@
                 "1kg": 45.00
             },
             "imagem": "/img/file-traira-empanado.webp",
-            "descricao_seo": "Filé de traíra retalhado manualmente para remover espinhas, empanado em farinha de milho. Sem glúten.",
-            "descricao_longa": "A Traíra é um peixe de escama, permitido nas tradições que exigem peixe de escama na Sexta-Feira Santa. O filé é retalhado manualmente para eliminar espinhas, garantindo praticidade na hora de servir. Empanado em farinha de milho — naturalmente sem glúten.",
+            "descricao_seo": "Filé de peixe traíra retalhado manualmente para remover espinhas, empanado em farinha de milho. A melhor escolha para sua porção de peixe. Sem glúten.",
+            "descricao_longa": "O peixe traíra é uma tradição de excelência para a Sexta-Feira Santa. Nosso filé de traíra é retalhado artesanalmente para eliminar espinhas, garantindo praticidade. Empanado na farinha de milho (sem glúten), ele vai do congelador ao óleo, rendendo uma porção perfeita de peixe frito. Retire direto em nossa peixaria de produtos congelados.",
             "instrucoes": "Fritar ainda congelado em óleo a 180°C por aproximadamente 3–4 minutos, ou até dourar."
         },
         {
             "slug": "file-de-rosado-puro",
-            "nome": "Filé de Rosado Puro",
+            "nome": "Filé de Peixe Rosado (Bagre) Puro",
             "categoria": "couro",
             "ativo": true,
             "em_estoque": true,
@@ -110,13 +110,13 @@
                 "Por Quilo (Pesar na hora)": 45.00
             },
             "imagem": "/img/file-rosado-puro.webp",
-            "descricao_seo": "Filé de rosado puro (bagre) em pedaços grandes. Peixe de couro sem empanamento.",
-            "descricao_longa": "Também conhecido como bagre, o Rosado é um peixe de couro de sabor encorpado. Vendido puro, em pedaços grandes, e pesado na hora.",
-            "instrucoes": "Descongelar antes do preparo. Ótimo para ensopados com molho grosso."
+            "descricao_seo": "Filé de peixe rosado (bagre) puro em pedaços. Peixe de couro prático direto da nossa peixaria de congelados.",
+            "descricao_longa": "O peixe Rosado, muito conhecido como filé de Bagre, é um peixe de couro de sabor encorpado. Vendido puro, em pedaços grandes, e pesado na hora na nossa peixaria. Ideal para ensopados com molho grosso ou para você mesmo empanar sua porção de peixe frito.",
+            "instrucoes": "Descongelar antes do preparo. Ótimo para ensopados com molho grosso ou confira nossas dicas e prepare um excelente assado em família."
         },
         {
             "slug": "file-de-rosado-empanado",
-            "nome": "Filé de Rosado Empanado",
+            "nome": "Filé de Peixe Rosado (Bagre) Empanado",
             "categoria": "couro",
             "ativo": true,
             "em_estoque": true,
@@ -133,13 +133,13 @@
                 "1kg": 45.00
             },
             "imagem": "/img/rosado-empanado.webp",
-            "descricao_seo": "Rosado (Bagre) empanado em farinha de milho. Peixe de couro, sem glúten, pronto para fritar.",
-            "descricao_longa": "O Rosado, também conhecido como Bagre, é um peixe de couro de sabor encorpado e textura firme. Empanado artesanalmente em farinha de milho — naturalmente sem glúten. Vai direto do congelador ao óleo.",
+            "descricao_seo": "Filé de peixe rosado (bagre) empanado. Peixe de couro prático, saboroso, sem glúten e pronto para fritar.",
+            "descricao_longa": "O peixe Rosado, também muito conhecido como filé de Bagre, é um peixe de couro de sabor encorpado e textura firme. Empanado artesanalmente em farinha de milho — naturalmente sem glúten. Prático para preparar sua porção de peixe frito em casa: vai direto do congelador para o óleo. Retire na nossa peixaria especializada.",
             "instrucoes": "Fritar ainda congelado em óleo a 180°C por aproximadamente 3–4 minutos, ou até dourar."
         },
         {
             "slug": "file-de-anjo-puro",
-            "nome": "Filé de Anjo Puro",
+            "nome": "Filé de Peixe Anjo Puro",
             "categoria": "couro",
             "ativo": true,
             "em_estoque": true,
@@ -154,13 +154,13 @@
                 "Por Quilo (Pesar na hora)": 45.00
             },
             "imagem": "/img/file-anjo-puro.webp",
-            "descricao_seo": "Filé de anjo puro em pedaços grandes. Peixe de couro marinho sem empanamento.",
-            "descricao_longa": "O cação-anjo é um peixe de couro extremamente macio e sem espinhas. Vendido puro, em pedaços grandes para serem pesados na hora.",
+            "descricao_seo": "Filé de peixe anjo puro em pedaços grandes. Peixe de couro do mar sem espinhas, sem empanamento.",
+            "descricao_longa": "O filé de peixe Anjo é um peixe de couro do mar extremamente macio e com total ausência de espinhas. Vendido puro na nossa peixaria de congelados, em pedaços grandes para serem pesados na hora.",
             "instrucoes": "Descongelar na geladeira antes de preparar. Ideal para assados rápidos ou grelha."
         },
         {
             "slug": "file-de-anjo-empanado",
-            "nome": "Filé de Anjo Empanado",
+            "nome": "Filé de Peixe Anjo Empanado",
             "categoria": "couro",
             "ativo": true,
             "em_estoque": true,
@@ -177,8 +177,8 @@
                 "1kg": 45.00
             },
             "imagem": "/img/file-anjo-empanado.webp",
-            "descricao_seo": "Filé de anjo empanado em farinha de milho. Sem espinhas, sem glúten, ideal para crianças.",
-            "descricao_longa": "O filé de Anjo (cação) é famoso por sua maciez e total ausência de espinhas, sendo o queridinho das crianças. Empanado na farinha de milho e pronto para o óleo.",
+            "descricao_seo": "Filé de peixe anjo empanado em farinha de milho. Sem espinhas, ideal para porção de peixe frito, sem glúten.",
+            "descricao_longa": "O filé de peixe Anjo é famoso por sua maciez e total ausência de espinhas. Empanado na farinha de milho e pronto para o óleo. Adquira na nossa peixaria e garanta uma deliciosa porção de peixe frito em casa de forma muito prática.",
             "instrucoes": "Fritar ainda congelado em óleo a 180°C por aproximadamente 3–4 minutos, ou até dourar."
         },
         {

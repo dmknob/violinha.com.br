@@ -7,13 +7,15 @@
         <div class="relative w-full aspect-[4/3] bg-slate-100 overflow-hidden">
             <img src="<%= produto.imagem %>" alt="Foto de <%= produto.nome %>"
                 class="w-full h-full object-cover origin-center transition-transform duration-500 group-hover:scale-105"
-                loading="lazy">
+                <% if (typeof index !=='undefined' && index < 2) { %> fetchpriority="high" <% } else { %> loading="lazy"
+                <% } %>>
 
-            <% if (!produto.contem_gluten) { %>
-                <div class="<%= badgeClasses %> bg-ambar text-marinho shadow-sm" aria-label="Produto sem glúten">
-                    Sem Glúten
-                </div>
-                <% } %>
+                    <% if (!produto.contem_gluten) { %>
+                        <div class="<%= badgeClasses %> bg-ambar text-marinho shadow-sm"
+                            aria-label="Produto sem glúten">
+                            Sem Glúten
+                        </div>
+                        <% } %>
         </div>
 
         <div class="p-5 flex flex-col flex-grow w-full">
@@ -34,7 +36,7 @@
             <!-- Spacer para empurrar preço e botão pro final do card -->
             <div class="mt-auto flex items-center justify-between w-full">
                 <div class="flex flex-col">
-                    <span class="text-xs text-slate-400">A partir de</span>
+                    <span class="text-xs text-slate-600">A partir de</span>
                     <span class="font-bold text-lg text-esmeralda">
                         <%= formatters.formatCurrency(Object.values(produto.preco_por_peso)[0]) %>
                     </span>
