@@ -31,14 +31,24 @@
           <% if (typeof script !=='undefined' ) { %>
             <%- script %>
               <% } %>
-                <!-- Google tag (gtag.js) -->
-                <script async src="https://www.googletagmanager.com/gtag/js?id=G-QY868JJ6NF"></script>
+                <!-- Google tag (gtag.js) deferido para Lighthouse -->
                 <script>
                   window.dataLayer = window.dataLayer || [];
                   function gtag() { dataLayer.push(arguments); }
                   gtag('js', new Date());
 
-                  gtag('config', 'G-QY868JJ6NF');
+                  function initGtag() {
+                    // Injeta o script do Google Tag Manager
+                    const script = document.createElement('script');
+                    script.async = true;
+                    script.src = 'https://www.googletagmanager.com/gtag/js?id=G-QY868JJ6NF';
+                    document.head.appendChild(script);
+                    // Dispara a configuração
+                    gtag('config', 'G-QY868JJ6NF');
+                  }
+
+                  // Carrega o Analytics apenas após o carregamento completo da página e de seus recursos essenciais
+                  window.addEventListener('load', initGtag);
                 </script>
 </head>
 

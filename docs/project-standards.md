@@ -127,6 +127,32 @@ xl: 1280px  // Desktops
 - **Critical CSS**: Inline CSS crítico no `<head>`
 - **Defer/Async**: Scripts não-críticos devem usar `defer` ou `async`
 
+### 4.4 Scripts de Terceiros e Analytics
+- **Prioridade Lighthouse (Core Web Vitals)**: Scripts pesados como Google Analytics (GTAG) e Tag Manager NÃO devem atrasar a renderização inicial (Tempo de LCP).
+- **Estratégia**: A injeção da biblioteca deve ser disparada somente via `window.addEventListener('load', ...)` (Injeção Tardia). Assim, as interações ainda são computadas sem penalizar o ranqueamento SEO por performance.
+- **Exemplo de Implementação**:
+  ```html
+  <!-- Carregamento GTAG Amigável ao Lighthouse -->
+  <link rel="preconnect" href="https://www.googletagmanager.com">
+  <link rel="preconnect" href="https://www.google-analytics.com">
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    function initGtag() {
+      const script = document.createElement('script');
+      script.async = true;
+      script.src = 'https://www.googletagmanager.com/gtag/js?id=SUA_TAG';
+      document.head.appendChild(script);
+      gtag('config', 'SUA_TAG');
+    }
+    
+    // Dispara apenas quando o conteúdo visual e CSS terminarem de carregar
+    window.addEventListener('load', initGtag);
+  </script>
+  ```
+
 ---
 
 ## 5. SEO
