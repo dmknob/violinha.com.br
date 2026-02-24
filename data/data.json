@@ -205,6 +205,29 @@
             "descricao_seo": "Camarão à milanesa congelado. Produto artesanal, contém glúten.",
             "descricao_longa": "Camarão fresco cuidadosamente limpo e empanado à milanesa tradicional (com farinha de trigo e ovos). Muito crocante e saboroso, perfeito como aperitivo especial.",
             "instrucoes": "Fritar ainda congelado em óleo quente a 180°C até atingir tom bastante dourado."
+        },
+        {
+            "slug": "camarao-limpo-puro",
+            "nome": "Camarão Limpo (500g)",
+            "categoria": "camarao",
+            "ativo": true,
+            "em_estoque": true,
+            "empanado": false,
+            "contem_gluten": false,
+            "alergenos": [
+                "crustáceos"
+            ],
+            "pesos_disponiveis": [
+                "500g"
+            ],
+            "peso_padrao": "500g",
+            "preco_por_peso": {
+                "500g": 55.00
+            },
+            "imagem": "/img/camarao-limpo.webp",
+            "descricao_seo": "Camarão limpo puro, congelado extremamente fresco. Pescado recém capturado, em pacote de 500 gramas.",
+            "descricao_longa": "O nosso Camarão Limpo (pacote de 500gr) se destaca pelo frescor. Nós mesmos quem fazemos a limpeza, garantindo na sua peixaria de confiança um camarão que foi pescado há muito pouco tempo, super novo! A escolha perfeita para paellas, risotos e molhos sem dor de cabeça.",
+            "instrucoes": "Descongelar na geladeira antes do preparo. Cozimento rápido de 2 a 3 minutos para manter a maciez."
         }
     ]
 }
