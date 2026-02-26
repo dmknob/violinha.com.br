@@ -9,9 +9,9 @@ router.get('/sitemap.xml', (req, res) => {
     const { produtos } = res.locals.getData()
 
     const rotas_estaticas = [
-        { url: '/', prioridade: '1.0', frequencia: 'weekly' },
-        { url: '/como-preparar', prioridade: '0.8', frequencia: 'monthly' },
-        { url: '/tradicoes', prioridade: '0.7', frequencia: 'monthly' },
+        { url: '/', prioridade: '1.0', frequencia: 'daily' },
+        { url: '/como-preparar', prioridade: '0.8', frequencia: 'yearly' },
+        { url: '/tradicoes', prioridade: '0.7', frequencia: 'yearly' },
         { url: '/contato', prioridade: '0.6', frequencia: 'monthly' },
     ]
 
@@ -20,7 +20,7 @@ router.get('/sitemap.xml', (req, res) => {
         .filter(p => p.ativo)
         .map(p => ({
             url: `/peixe/${p.slug}`,
-            prioridade: p.em_estoque ? '0.9' : '0.5',
+            prioridade: p.em_estoque ? '0.9' : '0.6',
             frequencia: 'daily',
         }))
 
