@@ -38,12 +38,36 @@
                                 class="relative w-full aspect-square md:aspect-[4/3] bg-slate-100 rounded-2xl overflow-hidden shadow-sm">
                                 <img src="<%= produto.imagem %>" alt="<%= produto.nome %>"
                                     class="w-full h-full object-cover" fetchpriority=high>
-                                <% if (!produto.contem_gluten) { %>
-                                    <div class="absolute top-4 left-4 bg-ambar text-marinho px-4 py-1.5 text-sm font-bold rounded-full shadow"
-                                        aria-label="Produto sem glúten">
-                                        Sem Glúten
+                                <% if (!produto.em_estoque) { %>
+                                    <div class="absolute top-4 left-4 flex flex-col gap-2">
+                                        <div class="bg-slate-800 text-white px-4 py-1.5 text-sm font-bold rounded-full shadow flex items-center gap-2"
+                                            aria-label="Produto Temporariamente Indisponível">
+                                            Esgotado
+                                        </div>
                                     </div>
-                                    <% } %>
+                                    <% } else { %>
+                                        <div class="absolute top-4 left-4 flex flex-col gap-2 align-start items-start">
+                                            <% if (!produto.contem_gluten) { %>
+                                                <div class="bg-ambar text-marinho px-4 py-1.5 text-sm font-bold rounded-full shadow"
+                                                    aria-label="Produto sem glúten">
+                                                    Sem Glúten
+                                                </div>
+                                                <% } else { %>
+                                                    <div class="bg-red-600 text-white px-4 py-1.5 text-sm font-bold rounded-full shadow flex items-center gap-2"
+                                                        aria-label="Produto contém glúten">
+                                                        ⚠️ Contém Glúten
+                                                    </div>
+                                                    <% } %>
+
+                                                        <% if (produto.alergenos && produto.alergenos.includes('ovos'))
+                                                            { %>
+                                                            <div class="bg-orange-600 text-white px-4 py-1.5 text-sm font-bold rounded-full shadow flex items-center gap-2"
+                                                                aria-label="Produto contém ovos">
+                                                                🥚 Contém Ovos
+                                                            </div>
+                                                            <% } %>
+                                        </div>
+                                        <% } %>
                             </div>
 
                             <!-- Detalhes e Compra -->

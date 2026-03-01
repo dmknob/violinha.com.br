@@ -7,8 +7,11 @@ const router = express.Router()
 router.get('/', (req, res) => {
     res.locals.setCacheHeaders()
     const { produtos } = res.locals.getData()
-    // Home: apenas produtos ativos E em_estoque
-    const cardsProdutos = produtos.filter(p => p.ativo && p.em_estoque)
+    // Home: exibe todos os produtos ativos. Ordena colocando os sem estoque no final.
+    const cardsProdutos = produtos.filter(p => p.ativo).sort((a, b) => {
+        if (a.em_estoque === b.em_estoque) return 0;
+        return a.em_estoque ? -1 : 1;
+    })
     res.render('pages/home', {
         titulo: 'violinha.com.br • Peixe para Páscoa em Novo Hamburgo',
         produtos: cardsProdutos,

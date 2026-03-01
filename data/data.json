@@ -228,6 +228,29 @@
             "descricao_seo": "Camarão limpo puro, congelado extremamente fresco. Pescado recém capturado, em pacote de 500 gramas.",
             "descricao_longa": "O nosso Camarão Limpo (pacote de 500gr) se destaca pelo frescor. Nós mesmos quem fazemos a limpeza, garantindo na sua peixaria de confiança um camarão que foi pescado há muito pouco tempo, super novo! A escolha perfeita para paellas, risotos e molhos sem dor de cabeça.",
             "instrucoes": "Descongelar na geladeira antes do preparo. Cozimento rápido de 2 a 3 minutos para manter a maciez."
+        },
+        {
+            "slug": "file-de-tilapia-puro",
+            "nome": "Filé de Tilápia Puro",
+            "categoria": "escama",
+            "ativo": true,
+            "em_estoque": false,
+            "empanado": false,
+            "contem_gluten": false,
+            "alergenos": [],
+            "pesos_disponiveis": [
+                "500g",
+                "1kg"
+            ],
+            "peso_padrao": "1kg",
+            "preco_por_peso": {
+                "500g": 30.00,
+                "1kg": 60.00
+            },
+            "imagem": "/img/file-tilapia-puro.webp",
+            "descricao_seo": "Filé de tilápia puro, sem espinhas. Ideal para grelhar, assar ou empanar em casa.",
+            "descricao_longa": "O filé de tilápia é um peixe de escama magro, de sabor muito suave e textura firme, sendo o queridinho do dia a dia. Pela sua versatilidade, é perfeito para grelhar, assar no forno, ou para quem prefere empanar e fritar a sua própria porção. Prático e sem espinhas.",
+            "instrucoes": "Descongelar na geladeira. Pode ser grelhado, assado ou empanado para fritura."
         }
     ]
 }

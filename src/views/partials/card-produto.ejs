@@ -6,16 +6,38 @@
 
         <div class="relative w-full aspect-[4/3] bg-slate-100 overflow-hidden">
             <img src="<%= produto.imagem %>" alt="Foto de <%= produto.nome %>"
-                class="w-full h-full object-cover origin-center transition-transform duration-500 group-hover:scale-105"
+                class="w-full h-full object-cover origin-center transition-transform duration-500 group-hover:scale-105 <%= !produto.em_estoque ? 'grayscale opacity-75' : '' %>"
                 <% if (typeof index !=='undefined' && index < 2) { %> fetchpriority="high" <% } else { %> loading="lazy"
                 <% } %>>
-
-                    <% if (!produto.contem_gluten) { %>
-                        <div class="<%= badgeClasses %> bg-ambar text-marinho shadow-sm"
-                            aria-label="Produto sem glúten">
-                            Sem Glúten
+                    <% if (!produto.em_estoque) { %>
+                        <div class="absolute top-4 left-4 flex flex-col gap-2">
+                            <div class="px-3 py-1 text-xs font-bold rounded-full uppercase tracking-wider bg-slate-800 text-white shadow-sm flex items-center gap-1"
+                                aria-label="Produto Temporariamente Indisponível">
+                                Esgotado
+                            </div>
                         </div>
-                        <% } %>
+                        <% } else { %>
+                            <div class="absolute top-4 left-4 flex flex-col gap-2">
+                                <% if (!produto.contem_gluten) { %>
+                                    <div class="px-3 py-1 text-xs font-bold rounded-full uppercase tracking-wider bg-ambar text-marinho shadow-sm"
+                                        aria-label="Produto sem glúten">
+                                        Sem Glúten
+                                    </div>
+                                    <% } else { %>
+                                        <div class="px-3 py-1 text-xs font-bold rounded-full uppercase tracking-wider bg-red-600 text-white shadow-sm flex items-center gap-1"
+                                            aria-label="Produto contém glúten">
+                                            ⚠️ Contém Glúten
+                                        </div>
+                                        <% } %>
+
+                                            <% if (produto.alergenos && produto.alergenos.includes('ovos')) { %>
+                                                <div class="px-3 py-1 text-xs font-bold rounded-full uppercase tracking-wider bg-orange-600 text-white shadow-sm flex items-center gap-1"
+                                                    aria-label="Produto contém ovos">
+                                                    🥚 Contém Ovos
+                                                </div>
+                                                <% } %>
+                            </div>
+                            <% } %>
         </div>
 
         <div class="p-5 flex flex-col flex-grow w-full">
@@ -37,7 +59,7 @@
             <div class="mt-auto flex items-center justify-between w-full">
                 <div class="flex flex-col">
                     <span class="text-xs text-slate-600">A partir de</span>
-                    <span class="font-bold text-lg text-esmeralda">
+                    <span class="font-bold text-lg <%= produto.em_estoque ? 'text-esmeralda' : 'text-slate-400' %>">
                         <%= formatters.formatCurrency(Object.values(produto.preco_por_peso)[0]) %>
                     </span>
                 </div>
