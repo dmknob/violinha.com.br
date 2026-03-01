@@ -11,6 +11,7 @@ router.get('/sitemap.xml', (req, res) => {
     const rotas_estaticas = [
         { url: '/', prioridade: '1.0', frequencia: 'daily' },
         { url: '/como-preparar', prioridade: '0.8', frequencia: 'yearly' },
+        { url: '/como-empanar', prioridade: '0.8', frequencia: 'yearly' },
         { url: '/tradicoes', prioridade: '0.7', frequencia: 'yearly' },
         { url: '/contato', prioridade: '0.6', frequencia: 'monthly' },
     ]

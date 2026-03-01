@@ -34,6 +34,18 @@ router.get('/tradicoes', (req, res) => {
     })
 })
 
+// GET /como-empanar
+router.get('/como-empanar', (req, res) => {
+    res.locals.setCacheHeaders()
+    const { config } = res.locals.getData()
+    const waMsg = encodeURIComponent('Olá! Vim da página de receitas, quero consultar disponibilidade dos peixes empanados.')
+    const waUrl = 'https://wa.me/' + config.whatsapp + '?text=' + waMsg
+    res.render('pages/como-empanar', {
+        titulo: 'Como Empanar Filé de Peixe • violinha.com.br',
+        waUrl,
+    })
+})
+
 // GET /contato
 router.get('/contato', (req, res) => {
     res.locals.setCacheHeaders()
